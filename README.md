@@ -11,3 +11,11 @@ gensim.models.doc2vec  文章向量  相似文章
 
 TF-IDF  对在一堆文集中的一篇文章来说，找出最能表征这篇文章的词。
 ```
+
+## 目录
+
+1_collections统计词频
+
+
+
+
