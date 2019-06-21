@@ -16,6 +16,8 @@ TF-IDF  对在一堆文集中的一篇文章来说，找出最能表征这篇文
 
 1_collections统计词频
 
-
-
-
+2_Gensim使用小解
+```
+Gensim使用小解
+https://blog.csdn.net/renjunsong0/article/details/77849049
+```
