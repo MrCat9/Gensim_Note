@@ -10,15 +10,16 @@
 
 # 文本预处理（如：去除空值）
 
-# 读出停用词  # 考虑动态添加停用词？
+# 读出停用词  # 动态添加停用词？
 f = open('stopwords.txt', encoding='gbk')
 lines = f.readline()
 stoplst = list(map(lambda x:x.strip('\n'), lines))
 
 # 分词，得到所有文章的分词结果texts（形如：[['文章1的分词结果'], ['文章2的分词结果'], ['文章3的分词结果'], ]）
+# 停用词可以在分词的时候过滤，也可以放到建词袋后过滤
 texts = [[word for word in jieba.lcut(document) if word not in stoplst] for document in documents]
 
-# （统计词频，过滤低频词（过滤整个文章集/每篇文章的低频词）（用TF-IDF的话，去除低频词会影响IDF值））
+# （统计词频，过滤低频词（过滤整个文章集/每篇文章的低频词）（也可以放到建词袋后过滤）（用TF-IDF的话，去除低频词会影响IDF值））
 
 # 建词袋（一个词对应一个id）
 dictionary = corpora.Dictionary(texts)
