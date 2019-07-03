@@ -189,9 +189,9 @@ class TfIdf(object):
             top_sim_ids_dict = {}  # 文章 id:相似度
             for key, value in top_sim_dict.items():
                 new_key = text_id_list[key]
-                top_sim_ids_dict[new_key] = value
+                top_sim_ids_dict[str(new_key)] = value
 
-            result_dict[text_id_list[i]] = [top_sim_ids_dict]
+            result_dict[str(text_id_list[i])] = top_sim_ids_dict
             i += 1
 
         # ================================================================
