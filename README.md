@@ -21,3 +21,10 @@ TF-IDF  对在一堆文集中的一篇文章来说，找出最能表征这篇文
 Gensim使用小解
 https://blog.csdn.net/renjunsong0/article/details/77849049
 ```
+
+3_word2vec与doc2vec
+```
+https://www.cnblogs.com/maybe2030/p/5427148.html#top
+https://blog.csdn.net/qq_16633405/article/details/80480300
+```
+
