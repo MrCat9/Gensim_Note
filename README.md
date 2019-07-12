@@ -6,8 +6,8 @@ https://radimrehurek.com/gensim/tutorial.html
 
 ```
 注意区分
-gensim.models.word2vec  词向量  词与词之间的关系，近义词  相近的词在向量空间中距离更小
-dictionary.doc2bow(text)  文章向量  相似文章  每个纬度是一个词
+gensim.models.word2vec  词向量，将词映射到向量空间  词与词之间的关系，近义词  相近的词在向量空间中距离更小
+dictionary.doc2bow(text)  文章向量，将文章映射到向量空间  相似文章  每个纬度是一个词
 
 TF-IDF  对在一堆文集中的一篇文章来说，找出最能表征这篇文章的词。
 ```
